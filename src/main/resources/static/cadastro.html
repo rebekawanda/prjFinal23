@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="css/nishidou.css">
+    
+</head>
+<body>
+	   <nav>
+    <ul class="topnav">
+   <li><button onclick="Inicio()">Início</button><p>
+    <li><button onclick="Historia()">História</button><p>
+    <li><button onclick="Personagens()">Personagens</button><p>   
+    <li><button onclick="Comandos()">Comandos</button><p>
+    <li><button onclick="Squad()">Squad</button><p>
+    <li><a href="https://www.greenfoot.org/scenarios/32473"><button>Download do jogo</button>
+    <li><a href="cadastro.html"><button>Catálogo</button></a>
+    </li>
+    </ul>
+    </nav>
+    <h1>Catálogo</h1>
+    <div id="cadastro">
+        <h2>Catálogo</h2>
+        <form id="cadastroForm" enctype="multipart/form-data">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="genero">Gênero:</label>
+            <input type="text" id="genero" name="genero" required><br>
+
+            <label for="descricao">Descrição:</label>
+            <input type="text" id="descricao" name="descricao" required><br>
+            
+            <label for="descricao">Integrantes:</label>
+            <input type="text" id="integrantes" name="integrantes" required><br>
+
+            <label for="squad">Squad:</label>
+            <input type="text" id="squad" name="squad" required><br>
+
+            <label for="url">URL:</label>
+            <input type="text" id="url" name="url" required><br>
+            
+            <label for="thumbnail">Thumbnail:</label>
+            <input type="text" id="thumbnail" name="thumbnail" required><br>
+         
+            <button type="button" onclick="cadastrarJogo()">✔Cadastrar</button>
+            <button type="button" onclick="excluirJogo()">❌Excluir</button>
+            
+              <div id="divimagem">
+			<h2>Lista de Jogos</h2><br>
+            <button type="button" onclick="ListarJogos()">🔎Pesquisar</button>
+            <header>
+        
+    		</header>
+
+    		<aside>
+        		<!-- Barra lateral, se necessário -->
+   			 </aside>
+
+    		<main>
+        	<table class="blueTable" id="jogos-tabela">
+	            <thead>
+	                <tr>
+	                    <th>ID</th>
+	                    <th>Nome do Jogo</th>
+	                    <th>Gênero</th>
+                        <th>Descrição</th>
+	                    <th>Integrantes</th>
+	                    <th>Squad</th>
+	                    <th>URL</th>
+	                    <th>Imagem</th>
+	                </tr>
+            	</thead>
+            	<tbody>
+                	<!-- A tabela de jogos será carregada aqui -->
+            	</tbody>
+        	</table>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/dezessetezou.js"></script>
+    <script src="cadastro.js"></script>
+</body>
+</html>
